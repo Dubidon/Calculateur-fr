@@ -1,0 +1,23 @@
+:root{--bg:#f6f4ef;--ink:#101426;--blue:#2236ff;--hi:#ffe14d;--card:#fff;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#0e1020;--ink:#f1f1f7;--card:#181b33;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,sans-serif}
+header{background:var(--blue);color:#fff;padding:2rem 1.25rem 3rem}header>*{max-width:760px;margin-inline:auto}
+.brand{display:block;font-weight:800;color:#fff;text-decoration:none;margin-bottom:2.5rem}
+h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.05;font-weight:800;margin-top:0;margin-bottom:.75rem;letter-spacing:-.02em}header p{margin:0;opacity:.9;max-width:55ch}
+main{max-width:760px;margin:-1.5rem auto 0;padding:0 1.25rem 2rem}
+.panel,.card{background:var(--card);border:2px solid var(--ink);border-radius:6px}
+.panel{padding:1.25rem}label{display:block;font-weight:600;font-size:.95rem;margin:.9rem 0 .25rem}
+input,select{width:100%;font:inherit;font-size:1.1rem;padding:.65rem .75rem;border:2px solid var(--ink);border-radius:4px;background:var(--bg);color:var(--ink)}
+input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+.out{margin-top:1.25rem;background:var(--hi);color:#101426;border:2px solid #101426;border-radius:4px;padding:.5rem 1rem}
+.out div{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px solid #10142633}.out div:last-child{border:0}
+.out div:first-child strong{font-size:1.6rem;font-weight:800}
+.ad{margin:1.5rem 0;min-height:90px;border:2px dashed #8887;display:grid;place-items:center;font-size:.8rem;opacity:.5}
+.txt{max-width:62ch}h2{font-size:1.4rem;margin:1.5rem 0 .5rem}.more{margin-top:2rem}
+.tools{display:flex;flex-wrap:wrap;gap:.5rem}.tools a{padding:.4rem .8rem;border:2px solid var(--ink);border-radius:99px;color:var(--ink);text-decoration:none;font-size:.95rem}
+.tools a:hover,.tools a[aria-current]{background:var(--ink);color:var(--bg)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{padding:1.1rem;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:.35rem;transition:transform .15s}.card:hover{transform:translate(-3px,-3px);box-shadow:5px 5px 0 var(--ink)}
+.card b{font-size:1.2rem}.card span{font-size:.95rem;opacity:.8}
+footer{max-width:760px;margin:0 auto;padding:1rem 1.25rem 2rem;font-size:.85rem;opacity:.7}
+@media(prefers-reduced-motion:reduce){.card{transition:none}}

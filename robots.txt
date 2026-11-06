@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dubidon.github.io/Calculateur-fr/sitemap.xml
